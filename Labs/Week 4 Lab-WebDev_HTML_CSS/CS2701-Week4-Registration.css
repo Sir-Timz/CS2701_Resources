@@ -66,11 +66,25 @@ aside {
     /*ToDo: Set width.ToDo: For fluid layouts, use min-width, max-width, and set to relative 
    values, like 25% of the page.*/ 
     background-color: #deded8;
+    
 }
 
 section {
     /*ToDo: Set width. For fluid layouts, use min-width, max-width, and set to relative 
    values, like 75% of the page.*/
+}
+
+.topbar {
+    width: max-content;
+    background-color: #111;
+}
+
+.sidenav {
+    width: 200px;
+}
+
+.layout {
+    display: flex;
 }
 
 /*Styling for search in aside*/
