@@ -75,15 +75,16 @@ section {
 }
 
 .topbar {
-    width: max-content;
+    width: 100%;
     background-color: #111;
+    
 }
 
 .sidenav {
     width: 200px;
 }
 
-.layout {
+.formbox {
     display: flex;
 }
 
@@ -94,6 +95,11 @@ section {
     text-align: left;
 }
 
+.topbarlink {
+    color: white;
+    text-decoration: none;
+}
+
 .center {
     /*ToDo: Styling for centered elements
     You can use margin, width useful to center.
@@ -101,6 +107,14 @@ section {
     border: 3px solid green;
     padding: 10px;
   }
+
+
+.hidden {
+    transform: translate(500px);
+    width: 10px;
+    border: 3px solid green;
+    padding: 10px;
+}
 
 /* Styling for text inputs in the form*/
 .textInput {

@@ -5,6 +5,7 @@
             Fresh Food For All
         </title>
         <link rel="stylesheet" href="CS2701-Week4-Registration.css">
+        
     </head>
     <body>
         <header></header>
@@ -19,61 +20,72 @@
          
         <main>
             <!-- Check Week 4 Lecture to learn about HTML5 semantic elements-->
-            <aside class="Topbar">
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Clients</a>
-                <a href="#">Contact</a>
+            <aside class="topbar">
+                <a class="topbarlink" href="#">About</a>
+                <a class="topbarlink" href="#">Services</a>
+                <a class="topbarlink" href="#">Clients</a>
+                <a class="topbarlink" href="#">Contact</a>
             </aside>
 
     
             <section class="layout">
 
-                <aside class="sidenav">
+                <div class="formbox">
+                    <aside class="sidenav">
+                        <input type="text" name="searchbar" id="searchbar" placeholder="Search...">
+                    </aside>
+                    <div class="formplushidden">
+                        <form class="center" id="registerform" novalidate>
+                        <!-- ToDo: Implement the form containing 
+                            Name - type text
+                            email- type text
+                            password - type text
+                            Terms of Service - type checkbox
+                            Register - button
+                            Learn more - link
+                            Check lecture slides and the links on the slides to learn about forms
+                            and how to create a button that would react to a click Event
+                            -->
+                        <!-- Example given for user type checkboxes-->
+
+                        <label for="name">Name:</label> <br>
+                        <input type="text" name="name" id="name" required> <br><br>
+
+                        <label for="email">Email:</label> <br>
+                        <input type="email" name="email" id="email" required> <br><br> 
+
+                        <label for="password">Password:</label> <br>
+                        <input type="text" name="password" id="password" required> <br><br>
+
+                        <label for="passwordretype">Re-type Password:</label> <br>
+                        <input type="text" name="passwordretype" id="passwordretype" required> <br><br>
+
+
+                        
+                        <input type="checkbox" id="buyer" name="buyer" value="buyer">
+                        <label for="buyer">I want to buy produce directly from allotment owners.</label><br>
+                        <input type="checkbox" id="seller" name="seller" value="seller">
+                        <label for="seller">I want to sell produce from my allotment.</label><br><br>
+
+                        <input type="checkbox" id="terms" name="terms" value="agree">
+                        <label for="terms">I agree to the <a href="https://en.wikipedia.org/wiki/Terms_of_service">Terms of Use</a> and <a href="https://en.wikipedia.org/wiki/Privacy_policy">Privacy Policy</a></label><br><br>
+
+                        <button type="submit">Register</button>
+                        <a href="https://www.wikipedia.org/">Learn more</a> <br>
+
+                        <br><br>
+                        
+                    </form>
+                    <div class="center" id="hiddenSection">
+                        <p id="hiddenParagraph"></p>
+                    </div>
+                    </div>
                     
-                </aside>
-
-                <form class="center" novalidate>
-                <!-- ToDo: Implement the form containing 
-                           Name - type text
-                           email- type text
-                           password - type text
-                           Terms of Service - type checkbox
-                           Register - button
-                           Learn more - link
-                           Check lecture slides and the links on the slides to learn about forms
-                           and how to create a button that would react to a click Event
-                        -->
-                    <!-- Example given for user type checkboxes-->
-
-                    <label for="name">Name:</label> <br>
-                    <input type="text" name="name" id="name" required> <br><br>
-
-                    <label for="email">Email:</label> <br>
-                    <input type="email" name="email" id="email" required> <br><br> 
-
-                    <label for="passwordretype">Re-type Password:</label> <br>
-                    <input type="text" name="passwordretype" id="passwordretype" required> <br><br>
-
-
-                    
-                    <input type="checkbox" id="buyer" name="buyer" value="buyer">
-                    <label for="buyer">I want to buy produce directly from allotment owners.</label><br>
-                    <input type="checkbox" id="seller" name="seller" value="seller">
-                    <label for="seller">I want to sell produce from my allotment.</label><br><br>
-
-                    <input type="checkbox" id="terms" name="terms" value="agree">
-                    <label for="terms">I agree to the <a href="https://en.wikipedia.org/wiki/Terms_of_service">Terms of Use</a> and <a href="https://en.wikipedia.org/wiki/Privacy_policy">Privacy Policy</a></label><br><br>
-
-                    <button>Register</button>
-                    <a href="https://www.wikipedia.org/">Learn more</a> <br>
-
-                    <br><br>
-                </form>
-                <div class="center" id="hiddenSection">
-                    <p id="hiddenParagraph"></p>
                 </div>
+                
+                
             </section>
         </main>
+        <script src="CS2701-Week4-Registration.js"></script>
     </body>
 </html>
